@@ -1,6 +1,8 @@
 # react-pouchdb-todo example
 
-[Live Example](https://react-pouchdb-todo.linklet.run)
+__[Live Example](https://react-pouchdb-todo.linklet.run)__
+
+![Video](resources/react-pouchdb-todo-example.gif)
 
 ## Setup
 
