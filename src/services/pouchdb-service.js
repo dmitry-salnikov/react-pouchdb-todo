@@ -1,14 +1,16 @@
 import { EventEmitter } from 'events'
 import PouchDB from 'pouchdb'
+import PouchDBAdapterWebSQL from 'pouchdb-adapter-websql'
 import PouchDBFind from 'pouchdb-find'
 import uuid from 'node-uuid'
 PouchDB.plugin(PouchDBFind)
+PouchDB.plugin(PouchDBAdapterWebSQL)
 
 export default class PouchDBService extends EventEmitter {
   constructor (syncURL, token) {
     super()
 
-    this.pouchDB = new PouchDB('default')
+    this.pouchDB = new PouchDB('default', {adapter: 'websql'})
     this.pouchDB
       .sync(syncURL, {
         live: true,

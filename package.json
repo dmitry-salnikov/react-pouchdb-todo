@@ -23,6 +23,7 @@
     "history": "3.0.0",
     "node-uuid": "^1.4.7",
     "pouchdb": "^6.0.6",
+    "pouchdb-adapter-websql": "^6.0.6",
     "pouchdb-find": "^0.10.3",
     "react": "15.2.1",
     "react-dom": "15.2.1",
